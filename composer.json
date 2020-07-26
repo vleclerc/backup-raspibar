@@ -10,11 +10,16 @@
 	],
 	"minimum-stability" : "dev",
 	"require": {
+<<<<<<< HEAD
 		"php": ">=5.3.0",
 		"kreait/firebase-php": "^4.17.0",
 		"laravel/installer": "^3.0@dev",
 		"laravel/ui": "^3.0@dev"
     },
+=======
+		"kreait/firebase-php": "^4.17.0"
+	},
+>>>>>>> ad95ba168e1fa7bc389f30dc029cc550f19c4a8d
     "autoload": {
         "psr-0": {
             "HelloWorld": "src/"

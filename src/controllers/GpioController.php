@@ -1,14 +1,19 @@
 <?php
-require '../vendor/predis/predis/autoload.php';
+require '../vendor/autoload.php';
 
-use Predis\Client;
-use function GuzzleHttp\json_decode;
-use function GuzzleHttp\json_encode;
+// require '../vendor/predis/predis/autoload.php';
+
+use Kreait\Firebase\Factory;
+use Kreait\Firebase\ServiceAccount;
+
+// use Predis\Client;
 
 class GpioController extends MyController {
     
+    const DB_NAME = 'raspibar-35706';
+
     static public $mapping = array(
-        'pump1' => '17', // GPIO 0
+        'pump1' => '17', // GPIO
         'pump2' => '18', // GPIO 1
         'pump3' => '27', // GPIO 2
         'pump4' => '22', // GPIO 3
@@ -19,7 +24,22 @@ class GpioController extends MyController {
     );
     
     private function getGpios(){
-        $client = new Client([
+
+	$serviceAccount = ServiceAccount::fromJsonFile('./firebase.json');
+	$firebase = (new Factory)
+   	->withServiceAccount($serviceAccount)
+   	->withDatabaseUri('https://my-project.firebaseio.com')
+   	->create();
+	
+	$database = $firebase->getDatabase();
+        
+	$reference = DB_NAME.'/raspberry/gio';
+        $snapshot = $database->getReference($reference)->getSnapshot();
+	var_dump($snapshot->getValue());
+
+
+	/*
+	$client = new Client([
             'scheme' => 'tcp',
             'host'   => 'redis.vld.local',
             'port'   => 6379
@@ -46,11 +66,12 @@ class GpioController extends MyController {
         var_dump($json);
         $o = json_decode($json);
         //var_dump($o);
+	*/
         die;
     }
     
     public function getAction($request) {
-        
+        	var_dump('toto'); die;
         
         $this->getGpios();
         

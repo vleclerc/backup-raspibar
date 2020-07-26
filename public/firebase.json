@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "raspibar-35706",
+  "private_key_id": "d3936713991b905f0285dcaf6d8b9d050d37b620",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD6BPBm8TQuNodB\nwVdbVAHyzvEVgpub3I8nbQqvVBiTPNE92VR9RFIETxXmKoPSj/sZyTIYG2bB/fAG\nHJmKID6pQrxoogx4OmTyaLynVCdKzVu0vPjIER0IiJ+fYkGPWItETWUZhCFh1hlG\nT0xAer2PCMFuVzLKWUapa4aMhnGKTctSaG2AqdtNXi9rdSASIgFNZJ2i/15vwMGi\nUkyLeALGabY6LluD9DakDxkSvtLMSz8ufswbqk+YpduuqU8Qzq3jEma2avCmEoAk\njVKvB+qSHSiJXCFmPDTga2s/aL0pwWSyAXuKrr0S0HX15VniVvLSYskbyZI9T6Ac\ngrsYcU0VAgMBAAECggEABYZ7pSg2nBIGp8qn2QENqYQF9LO3kD5ZhRnsBA0lkcxZ\nHy45uQefBWVPw7KrPixTozpcqqnbc/sG2ee58h43t+3u4oEtBsf98/ytnbxsZFR3\ndJ4bsAepVgdgM+JGNmjBd7P7Kj+gW7DFv+caDK+RAEliueAOxmgqc8Slc/Yrqd/T\nkgkBA4bH1+vONM/KMc4hXxqru8BhO28PBZGQWe6j1j+UC6EJxM0opqL2fotz9+4n\nq+BzCt0UTumq6qu3j7HwQv/O6UKQzUovCIMt1ACgSAjT7PDlsEU4H1wiYUZyYeJX\nM0/EO7J2bU8BmVYRbquW49xkjVq1/bmz3blGrdGeuQKBgQD+idT4JVQqgw+whSfO\niMgfFYgzQ9kTAI7w7wOurFzjH+gRzubM/gaDK4aMrbApISd+XjVbAXD/PPm0m2ho\nfpqedIqGXNWyLjxCHHjdUyCMosYNUmfMSfdkvtZ7e/r6ZGGq5FW1XJKkNQ2LRGdi\nCbcHZTf3DFJmIuzYGGWuKmPZSQKBgQD7dHbQzS43k+RtyC+t0UPCGI1Ph+ZEt/AM\n71kfpEnhNSyE+v9zffmwRvhOXF2PnSmNUP2Zu5AKpm+FH/THdC7vG9ygKgQjXa8Q\n/CGv2kJBtdPkxWe+9+4V/snFkDVw2/28pxu6UeZj4/rLntnknDUHcEyA5xlZ7P15\nGruhz/CBbQKBgGMu0Ba1bPt3wGhXKnC3Kcu69yyKto5J/GjzqaqprTQvXZ160sJ0\nBZOdJTux/l+4dIwwJ3hDsoUyfFac6+0z0AoIfWXnzLk2fPKB57LOTnOeha/xOVMI\nS2ctWaQaZmylKs2NVbxqyxVDOvjWebZg9Lnj/g+89GqqF0IJF63rBKdJAoGAA7u1\n6+Gv9vlGIe8f7he2RtJwfqbI32pPsRF4pESfKC3O7GaBlmhfZaOYGim65d/ydvul\n2Dt1pwLTkwlna/Koo7opK2OUTiYc7EaiBWdbJniZncLkiGxL552xxzId6QALI1rj\nyX9fyUngNle0anV7QBIFwMAtmy0ukja4ZG2e530CgYEAwyX7mnWe4woZ0Ajii/ok\nklGYhci11eMGiUfABxCcw2XXiz63+f7e8lzJtmMi2XxINhDLqxFWChLvRfnWj/em\n69vAZdjfSW5Wqpb31tpYOAlKsizuAIhG1GioUG2VoGywVePD+Vl2viEVlsbWZ76d\nJ5TrQSBRWZGJEWgGlduU8qU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "raspibar@raspibar-35706.iam.gserviceaccount.com",
+  "client_id": "104493286686009753054",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/raspibar%40raspibar-35706.iam.gserviceaccount.com"
+}
