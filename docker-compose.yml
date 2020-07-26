@@ -1,0 +1,21 @@
+version: '3'
+services:
+  raspibar-php:
+    container_name: raspibar-php
+    image: vld-php-apache:1.0
+    command: /bin/bash /var/www/bin/boot.sh
+    volumes:
+       - ./blog:/var/www/html
+       - ./docker/etc/apache2/sites-available/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+       - ./docker/etc/bin:/var/www/bin
+       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+       - ./docker/tmp/xdebug:/tmp/xdebug
+       - ./docker/var/logs/apache2:/var/log/apache2
+    ports:
+      - 80:80
+    expose:
+      - 80
+networks:
+  default:
+    external:
+      name: vld-network

@@ -83,7 +83,7 @@ class GpioController extends MyController {
         		->setStatus('error');
         	}
 	
-        return $this->response->toJson();;
+        return $this->response->toJson();
     }
 
 }

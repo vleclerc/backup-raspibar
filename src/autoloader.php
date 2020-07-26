@@ -1,15 +1,26 @@
 <?php
+
 spl_autoload_register(function ($className) {
-    if (file_exists($className . '.php')) {
-        require_once $className . '.php';
+        
+    $srcDirs = [
+        '/', 
+        '/models/', 
+        '/controllers/'
+    ];
+
+    $extension = '.php';
+    $fileName = $className . $extension;
+
+    foreach($srcDirs as $dirName){
+        if (file_exists(__DIR__ . $dirName . $fileName)) {
+            require_once __DIR__ . $dirName . $fileName;
+            break;
+        } 
+        else {
+            continue;
+        }
     }
-    else if (file_exists(dirname(__FILE__) . '/models/' . $className . '.php')) {
-        require_once dirname(__FILE__) . '/models/' . $className . '.php';
-    }
-    else if (file_exists(dirname(__FILE__) . '/controllers/' . $className . '.php')) {
-        require_once dirname(__FILE__) . '/controllers/' . $className . '.php';
-    } else {
-        var_dump('Fatal Error : '.$className.' not found'); die;
-    }
-    
+
 });
+
+?>

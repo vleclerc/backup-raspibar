@@ -1,4 +1,5 @@
 <?php
+
 class Request {
     
     public $controller = '';
@@ -19,6 +20,7 @@ class Request {
         }
         
         switch($uri){
+            case 'users':
             case 'gpio':
                 $this->controller = ucfirst($uri) . self::CONTROLLER_SUFFIX;
                 break;
